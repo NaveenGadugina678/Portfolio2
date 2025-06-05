@@ -1,0 +1,182 @@
+*{
+    margin : 0;
+    font-family: Arial;
+    border: border-box;
+    font-family: 'Kreadon', sans-serif;
+}
+
+
+/* Header */
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height :100px;
+}
+
+.nav-bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-bar li a{
+    margin: 0 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover{
+    padding : 4px;
+    box-shadow: 3px 3px 0.1px #7DF9FF;
+}
+.tittle{
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 40px;
+    color:white;
+    box-shadow: 4px 4px 0.1px #7DF9FF;
+    padding: 5px;
+}
+
+.nav-links{
+    display:flex;
+    align-items: center;
+}
+
+.cv{
+    color: white;
+    margin-right:20px;
+    background-color: #7DF9FF;
+    padding:10px;
+    border-radius: 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.download-icon{
+    margin-left: 5px;
+}
+
+.cv:hover{
+    background-color: white;
+    color: #7DF9FF;
+}
+
+/* Hero Section */
+
+.hero-section{
+    height: 600px;
+    background-image: url("Panda.jpg");
+    background-size: cover;
+    border-top: #7DF9FF 1px solid;
+}
+
+.info{
+    padding-top:200px;
+    padding-right:150px;
+    font-size: 30px;
+    padding-left:700px;
+    
+}
+
+.info span{
+    position: relative;
+}
+
+.info span::before{
+    content: "Video Editor";
+    color: #7DF9FF;
+    animation: words 20s infinite;
+}
+
+.info span::after{
+    content: "";
+    position:absolute;
+    color: #7DF9FF;
+    animation : typing 20s steps(14) infinite;
+    width:calc(100% +8px);
+    right:-8px;
+}
+
+@keyframes words{
+    0%,20%{
+        content: "Video Editor";
+    }
+    21%,40%{
+        content: "Photographer";
+    }
+    41%,60%{
+        content: "Content Creator";
+    }
+    61%,80%{
+        content: "Freelancer";
+    }
+    81%,100%{
+        content: "Video Editor";
+    }
+}
+@keyframes typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+/* About section */
+
+.about{
+    padding: 50px;
+    background-color: #000;
+    text-align: center;
+    color:#fff;
+    height:300px;
+    align-items: center;    
+    border-top: #7DF9FF 1px solid;
+}
+
+.design1{
+    background-color: #7DF9FF;
+    height:10px;
+    margin-top: 10px;
+    margin-bottom:60px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left:500px;
+}
+
+.design2{
+    background-color: #7DF9FF;
+    height:10px;
+    margin-top:60px;
+    margin-bottom:20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right:500px;
+}
+
+.design3{
+    background-color: #7DF9FF;
+    height:10px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right:600px;
+}
+
+.design4{
+    background-color: #7DF9FF;
+    height:10px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right:700px;
+}
